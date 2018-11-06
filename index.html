@@ -17,6 +17,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 <style type="text/css">
+/*CSS for scroll to top button*/
 	.scrollToTop {
   background: url("assets/img/bootom-top-arrow.png") no-repeat scroll 13px 12px #000;
   border: 2px solid #F0F8FA;
@@ -41,15 +42,21 @@
   outline: none;
 }
 
+.redc{
+	color: red;
+}
+
 </style>
 
 </head>
 <body>
 <a href="#" class="scrollToTop"></a>
+
+<!--Menu Bar-->
 <header>
-    <nav id="navbar-main" class="navbar  navbar-expand-lg text-white fixed-top bg-default navbar-dark ">
+    <nav id="navbar-main" class="navbar  navbar-expand-lg text-white fixed-top navbar-dark " style="background-color: red;">
       <div class="container">
-        <a class="navbar-brand mr-lg-5" href="">
+        <a class="navbar-brand mr-lg-5" href="index.html">
           Company Name
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar_global" aria-controls="navbar_global" aria-expanded="false" aria-label="Toggle navigation">
@@ -59,7 +66,7 @@
           <div class="navbar-collapse-header">
             <div class="row">
               <div class="col-6 collapse-brand">
-                <a href="">
+                <a href="index.html" class="redc">
                   Company name
                 </a>
               </div>
@@ -74,14 +81,14 @@
           <ul class="navbar-nav ml-md-auto">
 
             <li class="nav-item px-3">
-              <a href="#about" class="nav-link"   role="button">
+              <a href="aboutus.html" class="nav-link"   role="button">
                 <i class="ni ni-bulb-61 d-lg-none"></i>
                 <span class="nav-link-inner--text">About Us</span>
               </a>
               
             </li>
             <li class="nav-item pl-3">
-              <a href="#rules" class="nav-link"   role="button">
+              <a href="career.html" class="nav-link"   role="button">
                 <i class="ni ni-collection d-lg-none"></i>
                 <span class="nav-link-inner--text">Careers</span>
               </a>
@@ -95,12 +102,13 @@
     </nav>
 </header>
 
+<!-- Main body-->
 <main>
     <div class="position-relative">
-      <!-- Hero for FREE version -->
-      <section class="section section-lg section-hero section-shaped">
+      <!-- Cover section -->
+      <section class="section section-lg section-hero section-shaped ">
         <!-- Background animation -->
-        <div class="shape shape-style-1 shape-default" id="particles-js">
+        <div class="shape shape-style-1 shape-danger" id="particles-js" style="background-color: red;">
 
         </div>
         <div class="container shape-container d-flex py-lg" id="particles-js">
@@ -125,7 +133,7 @@
             </div>
           </div>
         </div>
-        <!-- SVG separator -->
+        <!-- Creating cut on the bottom border -->
         <div class="separator separator-bottom separator-skew zindex-100">
           <svg x="0" y="0" viewBox="0 0 2560 100" preserveAspectRatio="none" version="1.1" xmlns="http://www.w3.org/2000/svg">
             <polygon class="fill-white" points="2560 0 2560 100 0 100"></polygon>
@@ -134,18 +142,19 @@
 
       </section>
 
+      <!-- Our clients-->
 	    <section class="section section-components mb-3" id="section-components">
 	      <div class="container">
 	        <div class="row justify-content-center">
 	          <div class="col-lg-12">
 	            <!-- Basic elements -->
-	            <h1 class="mb-5 text-center">
+	            <h1 class="mb-5 text-center redc">
 	              <span>Our clients</span>
 	            </h1>
 
 		      </div>
 		    </div>
-		    <div class="row slicker py-5">
+		    <div class="row slicker py-5">	<!--Class slicker leads to slider effect-->
 		    	<div class="col-lg-4">
 		    		<img src="assets/img/brand/apple.png" class="img-fluid">
 		    	</div>
@@ -168,12 +177,12 @@
 		  </div>
 		</section>
 
-		<section class="section section-components pb-3" id="section-components" style="background-color: #F0F8FA">  
+		<section class="section section-components pb-3" id="section-components" style="background-color: #FBEFEF">  
 		  <div class="container">   
 	        <div class="row justify-content-center mt-3">
 	          <div class="col-lg-12">
 	            <!-- Basic elements -->
-	            <h1 class="mb-5 text-center">
+	            <h1 class="mb-5 text-center redc">
 	              <span>Our products</span>
 	            </h1>
 		      </div>
@@ -241,7 +250,7 @@
                     <div class="icon icon-shape icon-shape-danger rounded-circle mb-4">
                       <i class="ni ni-atom"></i>
                     </div>
-                    <h6 class="text-danger text-uppercase">Product ID #1025</h6>
+                    <h6 class="redc text-uppercase">Product ID #1025</h6>
                     <p class="description mt-3">This is description of the product that includes the most important components and features.</p>
                     <div>
                       <span class="badge badge-pill badge-danger">design</span>
@@ -293,7 +302,7 @@
 
             <div class="col-lg-12 py-4 text-center">
 
-				<button class="btn btn-icon btn-3 btn-outline-primary text-center" type="button">
+				<button class="btn btn-icon btn-3 btn-outline-red text-center" type="button">
 					<span class="btn-inner--icon"><i class="fa fa-search"></i></span>
 
 				    <span class="btn-inner--text">View all products</span>
@@ -309,7 +318,7 @@
 	        <div class="row justify-content-center">
 	          <div class="col-lg-12">
 	            <!-- Basic elements -->
-	            <h1 class="mb-5 text-center">
+	            <h1 class="mb-5 text-center redc">
 	              <span>Range of partners</span>
 	            </h1>
 
@@ -319,8 +328,8 @@
               <div class="col-lg-3">
                 <div class="card card-lift--hover shadow border-0">
                   <div class="card-body py-5">
-                  	<h1 class="fa fa-shopping-cart ml-3" style="font-size: 640%;"></h1>                  	
-                    <h5 class="text-uppercase">E-Commerce</h5>
+                  	<h1 class="fa fa-shopping-cart ml-3 redc" style="font-size: 640%;"></h1>                  	
+                    <h5 class="text-uppercase redc">E-Commerce</h5>
                     <p class="description mt-3">This is description of the product that includes the most important components and features.</p>
 
                   </div>
@@ -329,8 +338,8 @@
               <div class="col-lg-3">
                 <div class="card card-lift--hover shadow border-0">
                   <div class="card-body py-5">
-                  	<h1 class="fa fa-home ml-3" style="font-size: 640%;"></h1>
-                    <h5 class="text-uppercase">Retailers</h5>
+                  	<h1 class="fa fa-home ml-3 redc" style="font-size: 640%;"></h1>
+                    <h5 class="text-uppercase redc">Retailers</h5>
                     <p class="description mt-3">This is description of the product that includes the most important components and features.</p>
                   </div>
                 </div>
@@ -338,8 +347,8 @@
               <div class="col-lg-3">
                 <div class="card card-lift--hover shadow border-0">
                   <div class="card-body py-5">
-                  	<h1 class="fa fa-cubes ml-3" style="font-size: 640%;"></h1>                  	
-                    <h5 class="text-uppercase">Whole salers</h5>
+                  	<h1 class="fa fa-cubes ml-3 redc" style="font-size: 640%;"></h1>                  	
+                    <h5 class="text-uppercase redc">Whole salers</h5>
                     <p class="description mt-3">This is description of the product that includes the most important components and features.</p>
 
                   </div>
@@ -349,8 +358,8 @@
               <div class="col-lg-3">
                 <div class="card card-lift--hover shadow border-0">
                   <div class="card-body py-5">
-                  	<h1 class="fa fa-rupee ml-3" style="font-size: 640%;"></h1>                  	                  	
-                    <h6 class="text-uppercase">Buyback Providers</h6>
+                  	<h1 class="fa fa-rupee ml-3 redc" style="font-size: 640%;"></h1>                  	                  	
+                    <h6 class="text-uppercase redc">Buyback Providers</h6>
                     <p class="description mt-3">This is description of the product that includes the most important components and features.</p>
 
                   </div>
@@ -362,8 +371,8 @@
               <div class="col-lg-3">
                 <div class="card card-lift--hover shadow border-0">
                   <div class="card-body py-5">
-                  	<h1 class="fa fa-gear ml-3" style="font-size: 640%;"></h1>                  	
-                    <h5 class="text-uppercase">Repair Centres</h5>
+                  	<h1 class="fa fa-gear ml-3 redc" style="font-size: 640%;"></h1>                  	
+                    <h5 class="text-uppercase redc">Repair Centres</h5>
                     <p class="description mt-3">This is description of the product that includes the most important components and features.</p>
 
                   </div>
@@ -372,8 +381,8 @@
               <div class="col-lg-3">
                 <div class="card card-lift--hover shadow border-0">
                   <div class="card-body py-5">
-                  	<h1 class="fa fa-recycle ml-3" style="font-size: 640%;"></h1>
-                    <h5 class="text-uppercase">Recyclers</h5>
+                  	<h1 class="fa fa-recycle ml-3 redc" style="font-size: 640%;"></h1>
+                    <h5 class="text-uppercase redc">Recyclers</h5>
                     <p class="description mt-3">This is description of the product that includes the most important components and features.</p>
                   </div>
                 </div>
@@ -381,8 +390,8 @@
               <div class="col-lg-3">
                 <div class="card card-lift--hover shadow border-0">
                   <div class="card-body py-5">
-                  	<h1 class="fa fa-shield ml-3" style="font-size: 640%;"></h1>                  	
-                    <h6 class="text-uppercase pt-1" style="font-size: 99%;">Insurance companies</h6>
+                  	<h1 class="fa fa-shield ml-3 redc" style="font-size: 640%;"></h1>                  	
+                    <h6 class="text-uppercase pt-1 redc" style="font-size: 99%;">Insurance companies</h6>
                     <p class="description mt-3">This is description of the product that includes the most important components and features.</p>
 
                   </div>
@@ -392,8 +401,8 @@
               <div class="col-lg-3">
                 <div class="card card-lift--hover shadow border-0">
                   <div class="card-body py-5">
-                  	<h1 class="fa fa-industry ml-3" style="font-size: 640%;"></h1>
-                    <h5 class="text-uppercase">OEMs</h5>
+                  	<h1 class="fa fa-industry ml-3 redc" style="font-size: 640%;"></h1>
+                    <h5 class="text-uppercase redc">OEMs</h5>
                     <p class="description mt-3">This is description of the product that includes the most important components and features.</p>
 
                   </div>
@@ -404,66 +413,66 @@
 		  </div>
 		</section>
 
-	    <section class="section section-components mb-3" id="section-components" style="background-color: #F0F8FA">
+	    <section class="section section-components mb-3" id="section-components" style="background-color: #FBEFEF">
 	      <div class="container">
 	        <div class="row justify-content-center">
 	          <div class="col-lg-12">
 	            <!-- Basic elements -->
-	            <h1 class="mb-5 text-center">
+	            <h1 class="mb-5 text-center redc">
 	              <span>Client Testimonials</span>
 	            </h1>
 
 		      </div>
 		    </div>
-		    <div class="row slicker2 py-4">
-		    	<div class="col-lg-4 text-center">
+		    <div class="row slicker2 py-4">	<!--Slicker 2 calls for slider effect-->
+		    	<div class="col-lg-4 text-center redc">
 		    		<div class="mr-2" style="background-color: white;">
-                  	<h1 class="fa fa-quote-left pt-4" style="font-size: 300%;"></h1>
+                  	<h1 class="fa fa-quote-left pt-4 redc" style="font-size: 300%;"></h1>
                     <p class="description mt-3 px-3" style="font-size: 110%;">This is the review of me because I felt the product to be extremely awesome and thus could not resist from leaving a comment. I wish the company the very best for their future endeavours</p>
                     <b>Person #1</b><br>
                     <p class="pb-4">Chairman, ABC info</p>
                 </div>
 		    	</div>
 
-		    	<div class="col-lg-4 text-center">
+		    	<div class="col-lg-4 text-center redc">
 		    		<div class="ml-2" style="background-color: white;">
-		    		<h1 class="fa fa-quote-left pt-4" style="font-size: 300%;"></h1>
+		    		<h1 class="fa fa-quote-left pt-4 redc" style="font-size: 300%;"></h1>
                     <p class="description mt-3 px-3" style="font-size: 110%;">This is the review of me because I felt the product to be extremely awesome and thus could not resist from leaving a comment. I wish the company the very best for their future endeavours</p>
                     <b>Person #2</b><br>
                     <p class="pb-4">MD, XYZ corp</p>
                 </div>
 		    	</div>
 
-		    	<div class="col-lg-4 text-center">
+		    	<div class="col-lg-4 text-center redc">
 		    		<div class="mr-2" style="background-color: white;">		    		
-                  	<h1 class="fa fa-quote-left pt-4" style="font-size: 300%;"></h1>
+                  	<h1 class="fa fa-quote-left pt-4 redc" style="font-size: 300%;"></h1>
                     <p class="description mt-3 px-3" style="font-size: 110%;">This is the review of me because I felt the product to be extremely awesome and thus could not resist from leaving a comment. I wish the company the very best for their future endeavours</p>
                     <b>Person #3</b><br>
                     <p class="pb-4">Chairman, ABC info</p>
 					</div>
 		    	</div>
 
-		    	<div class="col-lg-4 text-center">
+		    	<div class="col-lg-4 text-center redc">
 		    		<div class="ml-2" style="background-color: white;">                  	
-                  	<h1 class="fa fa-quote-left pt-4" style="font-size: 300%;"></h1>
+                  	<h1 class="fa fa-quote-left pt-4 redc" style="font-size: 300%;"></h1>
                     <p class="description mt-3 px-3" style="font-size: 110%;">This is the review of me because I felt the product to be extremely awesome and thus could not resist from leaving a comment. I wish the company the very best for their future endeavours</p>
                     <b>Person #4</b><br>
                     <p class="pb-4">MD, XYZ corp</p>
                 </div>
 		    	</div>
 
-		    	<div class="col-lg-4 text-center">
+		    	<div class="col-lg-4 text-center redc">
 		    		<div class="mr-2" style="background-color: white;">                  	
-                  	<h1 class="fa fa-quote-left pt-4" style="font-size: 300%;"></h1>
+                  	<h1 class="fa fa-quote-left pt-4 redc" style="font-size: 300%;"></h1>
                     <p class="description mt-3 px-3" style="font-size: 110%;">This is the review of me because I felt the product to be extremely awesome and thus could not resist from leaving a comment. I wish the company the very best for their future endeavours</p>
                     <b>Person #5</b><br>
                     <p class="pb-4">Chairman, ABC info</p>
                 </div>
 		    	</div>
 
-		    	<div class="col-lg-4 text-center">
+		    	<div class="col-lg-4 text-center redc">
 		    		<div class="ml-2" style="background-color: white;">                  	
-                  	<h1 class="fa fa-quote-left pt-4" style="font-size: 300%;"></h1>
+                  	<h1 class="fa fa-quote-left pt-4 redc" style="font-size: 300%;"></h1>
                     <p class="description mt-3 px-3" style="font-size: 110%;">This is the review of me because I felt the product to be extremely awesome and thus could not resist from leaving a comment. I wish the company the very best for their future endeavours</p>
                     <b>Person #6</b><br>
                     <p class="pb-4">MD, XYZ corp</p>
@@ -474,7 +483,7 @@
 		  </div>
 		</section>
 
-    <section class="section pb-0 bg-gradient-info">
+    <section class="section pb-0 bg-gradient-warning">
       <div class="container">
         <div class="row row-grid align-items-center pb-4">
           <div class="col-md-6 order-lg-2 ml-lg-auto">
@@ -507,10 +516,10 @@ We work with our clients to make their processes more agile, secure, cost effect
       <div class="container">
         <div class="row justify-content-center mt-5">
           <div class="col-lg-8">
-            <div class="card bg-gradient-secondary shadow">
-              <div class="card-body p-lg-5">
-                <h4 class="mb-1">Explore your business with us!</h4>
-                <p class="mt-0">It can help you reach a different height in your business</p>
+            <div class="card bg-gradient-secondary shadow redc">
+              <div class="card-body p-lg-5 redc">
+                <h4 class="mb-1 redc">Explore your business with us!</h4>
+                <p class="mt-0 redc">It can help you reach a different height in your business</p>
                 <div class="form-group mt-4">
                   <div class="input-group input-group-alternative">
                     <div class="input-group-prepend">
@@ -541,7 +550,7 @@ We work with our clients to make their processes more agile, secure, cost effect
                   <textarea class="form-control form-control-alternative" name="name" rows="4" cols="80" placeholder="Type a message..."></textarea>
                 </div>
                 <div>
-                  <button type="button" class="btn btn-primary btn-round btn-block btn-lg">Send Message</button>
+                  <button type="button" class="btn btn-round btn-block btn-lg" style="background-color: red;color: white;">Send Message</button>
                 </div>
               </div>
             </div>
@@ -553,7 +562,7 @@ We work with our clients to make their processes more agile, secure, cost effect
     </div>
 </main>
 
-<footer class="footer bg-gradient-default ">
+<footer class="footer" style="background-color: red;">
 
     <div class="container-fluid">
 
@@ -606,7 +615,7 @@ We work with our clients to make their processes more agile, secure, cost effect
     </div>
 
   </footer>
-   <div class="p-2 text-white text-center bg-default" > Developed by Pratik Ratadiya 
+   <div class="p-2 text-white text-center bg-gradient-danger" > Developed by Pratik Ratadiya 
   </div>
  </body>
 <!-- Core -->
